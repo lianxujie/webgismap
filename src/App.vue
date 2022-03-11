@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2022-03-10 19:09:35
- * @LastEditTime: 2022-03-10 19:52:37
+ * @LastEditTime: 2022-03-10 21:59:52
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \X北辰北\webgismap\webgismap\src\App.vue
@@ -15,19 +15,21 @@
           width="200px"
           class="sys-menu"
         >左侧菜单</el-aside>
-        <el-main>地图区域</el-main>
+        <el-main>
+          <MapView />
+        </el-main>
       </el-container>
     </el-container>
   </div>
 </template>
 
 <script>
-
+import MapView from './components/Common/MapView.vue'
 
 export default {
   name: 'App',
   components: {
-
+    MapView,
   }
 }
 </script>
